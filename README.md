@@ -2,6 +2,8 @@
 
 A mobile keyboard for APL
 
+Visit https://turtleyacht.github.io/ap-el-kb.github.io/ to check it out.
+
 Inspired by pushfoo and 082349872349872 discussion in _The Cognitive Style of
 Unix_ (2010) on Hacker News.
 
