@@ -9,7 +9,7 @@ Unix_ (2010) on Hacker News.
 
 ## Features
 
-Type in APL on mobile. Receive a toast with the ASCII equivalent. Through play,
+Type in APL on mobile. Receive info about the symbol. Through play,
 learn passively various ideas and operations that could filter into your daily
 (other) programming languages. Spark curiosity.
 
@@ -66,13 +66,20 @@ Admittedly, this only touches the surface of starting out with APL. We only
 assigned one APL symbol (alpha), and use `?` for testing purposes. Further work
 will be done here to separate the keycode mapping elsewhere for tidiness.
 
+Because we take over Left Control + Left Alt, we can't cycle consoles with the
+Function keys (F1-F5, for example). This seems okay since we shouldn't be
+switching to root too often.
+
+Right Alt + Caps Lock is an ISO_Level_3_Shift, which is an escape route in case
+of needing additional Unicode characters (maybe?).
+
 ## Verifying APL Symbol Setup
 
 Here are a few test cases to try after launching with `startx`; first, we verify
 Compose key works:
 
 1. Press Shift and Right Alt.
-2. Type tilde ```
+2. Type backtick (grave) key.
 3. Type `a`
 
 The terminal should produce accented a.
@@ -101,7 +108,7 @@ development feedback loop to debug key mappings.
 ## Pattern Notes
 
 Reviewing the Unicode characters for APL, the modifiers look to be quad, stile,
-tilde, diaresis (double-quote), macron (overbar), circle, slash, backslash, jot,
-minus, and down tack. (More details to be shared in a table later, once key
-mappings are complete.)
+underbar, tilde, diaresis (double-quote), macron (overbar), circle, slash,
+backslash, jot, minus, and down tack. (More details to be shared in a table
+later, once key mappings are complete.)
 
