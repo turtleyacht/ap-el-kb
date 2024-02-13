@@ -105,6 +105,64 @@ Output should be alpha, question mark, lowercase a, and uppercase A.
 The test cases may seem extraneous, but the last two are techniques for a
 development feedback loop to debug key mappings.
 
+## Brief Usage with got(1) (Development Only)
+
+(More details later.)
+
+1. Configure new SSH key.
+2. Add SSH key to git provider via their API.
+3. Clone repo and hack away:
+
+    got clone git@ssh_host_alias:turtleyacht/ap-el-kb.github.io.git
+    cd ap-el-kb.github.io.git/
+    got checkout -b main .
+
+Once cloned and change-dir'd, the current directory has the repo code. As with
+git(1) installed on a new machine, some additional config is needed. One is to
+add a top-level GOT_AUTHOR directive in got.conf(5):
+
+    author "Your Name <your-email@self-hosted.com>"
+
+Below are some command equivalencies between git(1) and got(1):
+
+    git log                   got log -b | less
+    git checkout main         got checkout -b main . # after cd
+    git status                got status # after changes
+    git status                got branch
+    git add _file_            got stage _file_
+    git diff --cached         got diff -s
+    git commit                got commit -F .commit-template # opens ed(1)
+    git push ...              got send
+
+They're not necessarily 1:1 based on implementation, but just by observing what
+has changed.
+
+Since ed(1) editor opens by default, it's harder to use 50-char ruler for commit
+subject and 72-char ruler for commit body. We use a _commit template_ to make
+rulers available.
+
+Learning ed(1) helps one realize code is just text that can be transformed with
+patterns.
+
+## Exiting ed(1) (Development Only)
+
+If you're ever stuck, see below steps.
+
+1. Move to the first line with `1`
+2. Delete everything with `1,$d`
+3. Save the file with `w`
+4. Quit with `q`
+
+In sequence, that looks like
+
+    1
+    1,$d
+    w
+    q
+
+This deletes everything in the commit. That will abort the commit message, since
+it's now empty.
+
 ## Pattern Notes
 
 Reviewing the Unicode characters for APL, the modifiers look to be quad, stile,
