@@ -60,11 +60,17 @@ these options:
     setxkbmap -option lv3:ralt_switch_multikey
     setxkbmap -option lv3:caps_switch_latch
     setxkbmap -option grp:ctrl_alt_toggle
-    xmodmap -e "keycode 38 = a A U237a question"
+    xmodmap $HOME/.Xmodmapapl
 
-Admittedly, this only touches the surface of starting out with APL. We only
-assigned one APL symbol (alpha), and use `?` for testing purposes. Further work
-will be done here to separate the keycode mapping elsewhere for tidiness.
+Next, copy the .Xmodmapapl file from this repo to your HOME directory.
+
+Finally, type `startx` to start X11 with the modified setup.
+
+Open an `xterm`, and press Left Control and Left Alt at the same time. Typing
+1 should print two upper dots, or a _diaeresis,_ and typing exclamation mark
+(Shift+1) should print a larger-looking "I" character (called an I-beam).
+
+Your APL input mode is enabled!
 
 Because we take over Left Control + Left Alt, we can't cycle consoles with the
 Function keys (F1-F5, for example). This seems okay since we shouldn't be
