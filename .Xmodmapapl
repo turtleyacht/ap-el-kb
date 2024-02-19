@@ -1,0 +1,32 @@
+! .Xaplmodmap
+! Keycodes mapped to APL Unicode symbols
+
+! Generate your own with
+!
+!     tmux     # For scrolling
+!     xev -pke # Print keycodes to stdout
+!     # C-b [
+!     # PgUp or PgDown
+!
+
+! Keycode mappings
+!
+! 49 ` ~ ⋄   ⌺    DIAMOND             QUAD DIAMOND
+! 10 1 ! ¨       ⌶    DIAERESIS           I-BEAM
+! 11 2 @ ¯                       MACRON              ?
+! 12 3 # <              ⍒    LESS-THAN SIGN      DEL STILE
+! 13 4 $ ≤   ⍏    LESS-THAN OR EQUAL  UPWARDS VANE
+! 14 5 % =              ⌽    <equal>             CIRCLE STILE
+! 15 6 ^ ≥   ⍉    GREATER-THAN OR     CIRCLE SLOPE
+! 16 7 & >              ∘    GREATER-THAN        JOT
+
+keycode  49 = grave asciitilde U22c4 U233a
+keycode  10 = 1 exclam diaeresis U2336
+! can't find DEL OVERBAR
+keycode  11 = 2 at U00AF question
+keycode  12 = 3 numbersign U003C U2352
+keycode  13 = 4 dollar U2264 U234f
+! In APL mode (Ctrl+Alt), equals outputs division, so alt. equal still needed
+keycode  14 = 5 percent equal U233d
+keycode  15 = 6 asciicircum U2265 U2349
+keycode  16 = 7 ampersand U003E U2218
