@@ -13,12 +13,51 @@
 !
 ! 49 ` ~ ⋄   ⌺    DIAMOND             QUAD DIAMOND
 ! 10 1 ! ¨       ⌶    DIAERESIS           I-BEAM
-! 11 2 @ ¯                       MACRON              ?
+! 11 2 @ ¯                       MACRON              ?DEL OVERBAR?
 ! 12 3 # <              ⍒    LESS-THAN SIGN      DEL STILE
 ! 13 4 $ ≤   ⍏    LESS-THAN OR EQUAL  UPWARDS VANE
-! 14 5 % =              ⌽    <equal>             CIRCLE STILE
+! 14 5 % =              ⌽    EQUAL               CIRCLE STILE
 ! 15 6 ^ ≥   ⍉    GREATER-THAN OR     CIRCLE SLOPE
 ! 16 7 & >              ∘    GREATER-THAN        JOT
+! 17 8 * ≠   ⍟    NOT EQUAL TO        CIRCLE STAR
+! 18 9 ( ∨                   LOGICAL OR          ?DOWN CARET MACRON?
+! 19 0 ) ∧   ⍲    LOGICAL AND         UP CARET TILDE
+! 20 - _ ×       !               MULTIPLICATION      !
+! 21 = + ÷       ⌹    DIVIDE              QUAD DIVIDE
+! 24 q Q ?              Q               QUESTION            Q
+! 25 w W ⍵   W               OMEGA               W
+! 26 e E ∊   ⍷    EPSILON             EPSILON UNDERBAR
+! 27 r R ρ       R               SMALL LETTER RHO    R
+! 28 t T ~              ⍨    ~                   TILDE DIAERESIS
+! 29 y Y ↑   Y               UPWARDS ARROW       Y
+! 30 u U ↓   U               DOWNWARDS ARROW     U
+! 31 i I ⍳   ⍸    IOTA                IOTA UNDERBAR
+! 32 o O ○   ⍥    CIRCLE              CIRCLE DIAERESIS
+! 33 p P *              ⍣    STAR                STAR DIAERESIS
+! 34 [ { ←   ⍞    LEFT ARROW          QUAD QUOTE
+! 35 ] } →                   RIGHT ARROW         ?CIRCLE BAR?
+! 51 \ | ⊣   ⊢    LEFT TACK           RIGHT TACK
+! 38 a A ⍺   A               ALPHA               A
+! 39 s S ⌈   S               LEFT CEILING        S
+! 40 d D ⌊   D               LEFT FLOOR          D
+! 41 f F _              F               UNDERBAR            F
+! 42 g G ∇   G               DEL                 G
+! 43 h H ∆   H               DELTA               H
+! 44 j J ∘   ⍤    JOT                 JOT DIAERESIS
+! 45 k K '              ⌸    APOSTROPHE          QUAD EQUALS
+! 46 l L ⎕   ⌷    QUAD                SQUISH QUAD
+! 47 ; : ⍎                   DOWNTACK JOT        ?FILLED SQUARE?
+! 48 ' " ⍕   ≢    UPTACK JOT          NOT IDENTICAL TO*
+! 52 z Z ⊂   ⊆    LEFT SHOE           SUBSET OF OR EQL TO
+! 53 x X ⊃   X               SUPERSET OF         X
+! 54 c C ∩   C               UP SHOE             C
+! 55 v V ∪   V               UNION               V
+! 56 b B ⊤   B               DOWN TACK           B
+! 57 n N ⊥   N               UP TACK             N
+! 58 m M |              M               BAR                 M
+! 59 , < ⍝                   UPSHOE JOT          ?JOT/CIRCLE OVERBAR?
+! 60 . > ⍀   ⍙    BACKSLASH BAR       DELTA UNDERBAR
+! 61 / ? ⌿   ⍠    SLASH BAR           QUAD COLON
 
 keycode  49 = grave asciitilde U22c4 U233a
 keycode  10 = 1 exclam diaeresis U2336
@@ -30,3 +69,46 @@ keycode  13 = 4 dollar U2264 U234f
 keycode  14 = 5 percent equal U233d
 keycode  15 = 6 asciicircum U2265 U2349
 keycode  16 = 7 ampersand U003E U2218
+keycode  17 = 8 asterisk U2260 U235f
+! can't find DOWN CARET MACRON/OVERBAR
+keycode  18 = 9 parenleft U2228 question
+keycode  19 = 0 parenright U2227 U2372
+keycode  20 = minus underscore multiply exclam
+keycode  21 = equal plus division U2339
+keycode  24 = q Q question Q
+keycode  25 = w W U2375 W
+keycode  26 = e E U220a U2377
+keycode  27 = r R U03c1 R
+keycode  28 = t T asciitilde U2368
+keycode  29 = y Y U2191 Y
+keycode  30 = u U U2193 U
+keycode  31 = i I U2373 U2378
+keycode  32 = o O U25cb U2365
+keycode  33 = p P asterisk U2363
+keycode  34 = bracketleft braceleft U2190 U235e
+! can't find CIRCLE BAR
+keycode  35 = bracketright braceright U2192 question
+keycode  51 = backslash bar U22A3 U22A2
+keycode  38 = a A U237a A
+keycode  39 = s S U2308 S
+keycode  40 = d D U230A D
+keycode  41 = f F U005F F
+keycode  42 = g G U2207 G
+keycode  43 = h H U2206 H
+keycode  44 = j J U2218 U2364
+keycode  45 = k K apostrophe U2338
+keycode  46 = l L U2395 U2337
+! can't find filled square
+keycode  47 = semicolon colon U234e question
+keycode  48 = apostrophe quotedbl U2355 U2262
+keycode  52 = z Z U2282 U2286
+keycode  53 = x X U2283 X
+keycode  54 = c C U2229 C
+keycode  55 = v V U222A V
+keycode  56 = b B U22A4 B
+keycode  57 = n N U22A5 N
+keycode  58 = m M bar M
+! can't find jot (or circle) OVERBAR
+keycode  59 = comma less U235d question
+keycode  60 = period greater U2340 U2359
+keycode  61 = slash question U233f U2360
