@@ -22,7 +22,7 @@
 ! 17 8 * ≠   ⍟    NOT EQUAL TO        CIRCLE STAR
 ! 18 9 ( ∨                   LOGICAL OR          ?DOWN CARET MACRON?
 ! 19 0 ) ∧   ⍲    LOGICAL AND         UP CARET TILDE
-! 20 - _ ×       !               MULTIPLICATION      !
+! 20 - _ ×       !               MULTIPLICATION      QUOTE DOT
 ! 21 = + ÷       ⌹    DIVIDE              QUAD DIVIDE
 ! 24 q Q ?              Q               QUESTION            Q
 ! 25 w W ⍵   W               OMEGA               W
@@ -33,9 +33,9 @@
 ! 30 u U ↓   U               DOWNWARDS ARROW     U
 ! 31 i I ⍳   ⍸    IOTA                IOTA UNDERBAR
 ! 32 o O ○   ⍥    CIRCLE              CIRCLE DIAERESIS
-! 33 p P *              ⍣    STAR                STAR DIAERESIS
+! 33 p P ⋆   ⍣    STAR                STAR DIAERESIS
 ! 34 [ { ←   ⍞    LEFT ARROW          QUAD QUOTE
-! 35 ] } →                   RIGHT ARROW         ?CIRCLE BAR?
+! 35 ] } →   ⊖    RIGHT ARROW         (CIRCLE MINUS)
 ! 51 \ | ⊣   ⊢    LEFT TACK           RIGHT TACK
 ! 38 a A ⍺   A               ALPHA               A
 ! 39 s S ⌈   S               LEFT CEILING        S
@@ -54,7 +54,7 @@
 ! 55 v V ∪   V               UNION               V
 ! 56 b B ⊤   B               DOWN TACK           B
 ! 57 n N ⊥   N               UP TACK             N
-! 58 m M |              M               BAR                 M
+! 58 m M ∣   M               BAR                 M
 ! 59 , < ⍝                   UPSHOE JOT          ?JOT/CIRCLE OVERBAR?
 ! 60 . > ⍀   ⍙    BACKSLASH BAR       DELTA UNDERBAR
 ! 61 / ? ⌿   ⍠    SLASH BAR           QUAD COLON
@@ -65,29 +65,27 @@ keycode  10 = 1 exclam diaeresis U2336
 keycode  11 = 2 at U00AF question
 keycode  12 = 3 numbersign U003C U2352
 keycode  13 = 4 dollar U2264 U234f
-! In APL mode (Ctrl+Alt), equals outputs division, so alt. equal still needed
-keycode  14 = 5 percent equal U233d
+keycode  14 = 5 percent U003D U233d
 keycode  15 = 6 asciicircum U2265 U2349
 keycode  16 = 7 ampersand U003E U2218
 keycode  17 = 8 asterisk U2260 U235f
 ! can't find DOWN CARET MACRON/OVERBAR
 keycode  18 = 9 parenleft U2228 question
 keycode  19 = 0 parenright U2227 U2372
-keycode  20 = minus underscore multiply exclam
+keycode  20 = minus underscore multiply U0021
 keycode  21 = equal plus division U2339
-keycode  24 = q Q question Q
+keycode  24 = q Q U003F Q
 keycode  25 = w W U2375 W
 keycode  26 = e E U220a U2377
 keycode  27 = r R U03c1 R
-keycode  28 = t T asciitilde U2368
+keycode  28 = t T U223C U2368
 keycode  29 = y Y U2191 Y
 keycode  30 = u U U2193 U
 keycode  31 = i I U2373 U2378
 keycode  32 = o O U25cb U2365
-keycode  33 = p P asterisk U2363
+keycode  33 = p P U22C6 U2363
 keycode  34 = bracketleft braceleft U2190 U235e
-! can't find CIRCLE BAR
-keycode  35 = bracketright braceright U2192 question
+keycode  35 = bracketright braceright U2192 U2296
 keycode  51 = backslash bar U22A3 U22A2
 keycode  38 = a A U237a A
 keycode  39 = s S U2308 S
@@ -96,7 +94,7 @@ keycode  41 = f F U005F F
 keycode  42 = g G U2207 G
 keycode  43 = h H U2206 H
 keycode  44 = j J U2218 U2364
-keycode  45 = k K apostrophe U2338
+keycode  45 = k K U0027 U2338
 keycode  46 = l L U2395 U2337
 ! can't find filled square
 keycode  47 = semicolon colon U234e question
@@ -107,7 +105,7 @@ keycode  54 = c C U2229 C
 keycode  55 = v V U222A V
 keycode  56 = b B U22A4 B
 keycode  57 = n N U22A5 N
-keycode  58 = m M bar M
+keycode  58 = m M U2223 M
 ! can't find jot (or circle) OVERBAR
 keycode  59 = comma less U235d question
 keycode  60 = period greater U2340 U2359
